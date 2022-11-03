@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ThirdRatings
+comment1.params=
+comment1.target=ThirdRatings()
+comment2.params=ratingsfile
+comment2.target=ThirdRatings(java.lang.String)
+comment3.params=
+comment3.target=int\ getRaterSize()
+comment4.params=id\ minimalRaters
+comment4.target=double\ getAverageByID(java.lang.String,\ int)
+comment4.text=\r\n\ \ \ \ private\ void\ build(){\r\n\ \ \ \ \ \ \ \ map\ \=\ new\ HashMap<String,\ ArrayList<Double>>\ ();\r\n\ \ \ \ \ \ \ \ for(Rater\ r\ \:\ myRaters){\r\n\ \ \ \ \ \ \ \ \ \ \ \ ArrayList<String>\ items\ \=\ r.getItemsRated();\r\n\ \ \ \ \ \ \ \ \ \ \ \ for(String\ s\ \:\ items){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(map.containsKey(s)){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ArrayList<Double>\ ratings\ \=\ map.get(s);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Double\ temp\ \=\ r.getRating(s);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ratings.add(temp);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map.put(s,\ ratings);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ else{\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ArrayList<Double>\ Nratings\ \=\ new\ ArrayList<Double>();\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Double\ temp\ \=\ r.getRating(s);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Nratings.add(temp);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map.put(s,\ Nratings);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ //map\ created\ with\ key\ as\ movieID\ and\ value\ as\ array\ of\ ratings.\r\n\ \ \ \ }\r\n\ \ \ \ \r\n
+comment5.params=minimalRaters
+comment5.target=java.util.ArrayList\ getAverageRatings(int)
+comment6.params=minimalRaters\ filterCriteria
+comment6.target=java.util.ArrayList\ getAverageRatingsByFilter(int,\ Filter)
+numComments=7
